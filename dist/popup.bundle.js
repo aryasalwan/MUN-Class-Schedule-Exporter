@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){document.getElementById("DownloadICS").addEventListener("click",(function(){chrome.tabs.query({active:!0,currentWindow:!0},(function(e){chrome.scripting.executeScript({target:{tabId:e[0].id},files:["dist/content.bundle.js"]})}))}))}));
